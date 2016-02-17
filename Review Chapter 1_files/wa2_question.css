@@ -1,0 +1,347 @@
+.wa2_question {
+  padding: 0px;
+  padding-right: 45px;
+  /* needed to ensure absolute positioned marks are not clipped in print media */
+  margin: 0px;
+  font: normal 13px/18px verdana, geneva, sans-serif;
+  counter-reset: part-count;
+}
+.wa2_question li {
+  font: normal 13px/18px verdana, geneva, sans-serif;
+}
+.wa2_question #header {
+  margin: 16px 42px;
+}
+.wa2_question [class*='wa-numbering-']:before {
+  width: 14px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 6px;
+}
+.wa2_question .wa-content ul {
+  padding: 0;
+  margin: 0 0 0 16px;
+  list-style-type: none;
+}
+.wa2_question .wa-content ol {
+  padding: 0;
+  margin: 0 0 0 16px;
+  list-style-type: decimal;
+}
+.wa2_question .wa-content ol.wa-numbering-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.wa2_question .wa-content ol.wa-numbering-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.wa2_question .wa-content ol.wa-numbering-lower-roman {
+  list-style-type: lower-roman;
+}
+.wa2_question .wa-content ol.wa-numbering-upper-roman {
+  list-style-type: upper-roman;
+}
+.wa2_question .wa-content ol.wa-numbering-bullet {
+  list-style-type: disc;
+}
+.wa2_question .wa-content ol.wa-numbering-decimal {
+  list-style-type: decimal;
+}
+.wa2_question .wa-content ol.wa-numbering-none {
+  list-style-type: none;
+}
+.wa2_question .wa-content ol li {
+  margin-left: 20px;
+}
+.wa2_question .wa-content .wa-question[class*='wa-numbering-'] > .wa-part {
+  margin-left: 20px;
+}
+.wa2_question .wa-content .wa-question[class*='wa-numbering-'] > .wa-part:before {
+  left: -20px;
+  vertical-align: top;
+  position: absolute;
+  top: 0px;
+  counter-increment: part-count;
+}
+.wa2_question .wa-content .wa-question.wa-numbering-lower-alpha > .wa-part:before {
+  content: counter(part-count, lower-alpha)'.';
+}
+.wa2_question .wa-content .wa-question.wa-numbering-upper-alpha > .wa-part:before {
+  content: counter(part-count, upper-alpha)'.';
+}
+.wa2_question .wa-content .wa-question.wa-numbering-lower-roman > .wa-part:before {
+  content: counter(part-count, lower-roman)'.';
+}
+.wa2_question .wa-content .wa-question.wa-numbering-upper-roman > .wa-part:before {
+  content: counter(part-count, upper-roman)'.';
+}
+.wa2_question .wa-content .wa-question.wa-numbering-bullet > .wa-part:before {
+  content: counter(part-count, disc);
+}
+.wa2_question .wa-content .wa-question.wa-numbering-decimal > .wa-part:before {
+  content: counter(part-count, decimal)'.';
+}
+.wa2_question .wa-content .wa-question.wa-numbering-none > .wa-part:before {
+  content: counter(part-count, none);
+}
+.wa2_question .wa-content .wa-question .wa-part {
+  position: relative;
+  counter-reset: interaction-count;
+}
+.wa2_question .wa-content .wa-question .wa-part[class*='wa-numbering-'] > .wa-interaction {
+  margin-left: 20px;
+}
+.wa2_question .wa-content .wa-question .wa-part[class*='wa-numbering-'] > .wa-interaction:before {
+  left: -20px;
+  vertical-align: top;
+  position: absolute;
+  top: 0px;
+  counter-increment: interaction-count;
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-lower-alpha > .wa-interaction:before {
+  content: counter(interaction-count, lower-alpha)'.';
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-upper-alpha > .wa-interaction:before {
+  content: counter(interaction-count, upper-alpha)'.';
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-lower-roman > .wa-interaction:before {
+  content: counter(interaction-count, lower-roman)'.';
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-upper-roman > .wa-interaction:before {
+  content: counter(interaction-count, upper-roman)'.';
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-bullet > .wa-interaction:before {
+  content: counter(interaction-count, disc);
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-decimal > .wa-interaction:before {
+  content: counter(interaction-count, decimal)'.';
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-none > .wa-interaction:before {
+  content: counter(interaction-count, none);
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-lower-alpha > .wa-interaction {
+  list-style-type: lower-alpha;
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-upper-alpha > .wa-interaction {
+  list-style-type: upper-alpha;
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-lower-roman > .wa-interaction {
+  list-style-type: lower-roman;
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-upper-roman > .wa-interaction {
+  list-style-type: upper-roman;
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-bullet > .wa-interaction {
+  list-style-type: disc;
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-decimal > .wa-interaction {
+  list-style-type: decimal;
+}
+.wa2_question .wa-content .wa-question .wa-part.wa-numbering-none > .wa-interaction {
+  list-style-type: none;
+}
+.wa2_question .wa-content .wa-question .wa-part .wa-instructions,
+.wa2_question .wa-content .wa-question .wa-part .wa-given {
+  display: inline-block;
+  position: relative;
+}
+.wa2_question .wa-content .wa-question .wa-part .wa-instructions .wa-block,
+.wa2_question .wa-content .wa-question .wa-part .wa-given .wa-block {
+  position: relative;
+}
+.wa2_question .wa-content .wa-question .wa-part .wa-interaction {
+  display: block;
+  position: relative;
+}
+.wa2_question .wa-content .wa-question .wa-part .wa-interaction .wa-block {
+  position: relative;
+}
+
+.wa2_question .wa-mc {
+  display: block;
+  margin-top: 10px;
+}
+
+.wa2_question .wa-mc > input,
+.wa2_question .wa-mc > label {
+  display: inline;
+  margin-right: 10px;
+}
+
+.wa2_question br {
+  height: 0px;
+  line-height: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wa2_question .wa-var {
+  color: #d00;
+}
+
+.wa2_question .wa-given {
+  position: relative;
+}
+
+.wa2_question .wa-block {
+  display: inline-block;
+}
+
+.wa2_question .latex-container,
+.wa2_question .pspicture-view {
+  margin: 0px;
+}
+
+.wa2_question .feedback,
+.wa2_question .key {
+  font-weight: bold;
+  display: inline-block;
+}
+.wa2_question .feedback li,
+.wa2_question .key li {
+  font-weight: bold;
+}
+
+.wa2_question .wa-box-multichoice,
+.wa2_question .wa-box-multiselect,
+.wa2_question .wa-box-regular {
+  border: 3px solid transparent;
+}
+
+.wa2_question .wa-box-multichoice,
+.wa2_question .wa-box-multiselect,
+.wa2_question .wa-box-regular,
+.wa2_question .indented {
+  position: relative;
+}
+
+.wa2_question .wa-box-multichoice.correct,
+.wa2_question .wa-box-multiselect.correct,
+.wa2_question .wa-box-multichoice.incorrect,
+.wa2_question .wa-box-multiselect.incorrect {
+  color: #000000;
+  display: table;
+}
+
+.wa2_question .wa-box-regular input.invalid {
+  border: 3px solid #f0ad4e;
+}
+
+.wa2_question .wa-box-regular .wa-mark {
+  display: inline-block;
+}
+
+.wa2_question .wa-mark {
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wa2_question .dropdown-wrapper .wa-mark {
+  margin-top: 2px;
+}
+
+.wa2_question .dropdown-wrapper .wa-mark,
+.wa2_question .wa-box-regular .wa-mark {
+  margin-left: 8px;
+}
+
+.wa2_question .wa-box-multichoice .wa-mark,
+.wa2_question .wa-box-multiselect .wa-mark {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  position: absolute;
+  top: 0px;
+  right: -60px;
+}
+
+.wa2_question .wa-mark.correct:after {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  content: url(/static/img/questions/markSprite.png);
+  position: absolute;
+}
+
+.wa2_question .wa-mark.incorrect:after {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  content: url(/static/img/questions/markSprite.png);
+  position: absolute;
+  left: -56px;
+}
+
+.wa2_question .gray .wa-mark.correct:after {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  content: url(/static/img/questions/markSprite.png);
+  position: absolute;
+  top: -16px;
+  left: 0px;
+}
+
+.wa2_question .wa-mark.best {
+  width: 21px;
+}
+
+.wa2_question .wa-mark.best:after {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  content: url(/static/img/questions/markSprite.png);
+  position: absolute;
+  top: 0px;
+  left: -56px;
+}
+
+.wa2_question .gray .wa-mark.incorrect:after {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  content: url(/static/img/questions/markSprite.png);
+  position: absolute;
+  top: -16px;
+  left: -56px;
+}
+
+.wa-var {
+  color: #FF0000;
+}
+
+.wa2_question .wa-box-multichoice .wa-mc,
+.wa2_question .wa-box-multiselect .wa-mc {
+  display: block;
+  margin: 0 0 0.6em 1.8em;
+  clear: both;
+}
+
+.wa2_question .wa-box-multichoice .wa-mc label,
+.wa2_question .wa-box-multiselect .wa-mc label {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.wa2_question .wa-box-multichoice .wa-mc label img,
+.wa2_question .wa-box-multiselect .wa-mc label img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.wa-mc.selected label:before {
+  content: url(/wastatic/common/img/key_mult.gif);
+  height: 19px;
+  width: 21px;
+  display: inline-block;
+  bottom: -4px;
+  margin-right: 5px;
+  position: relative;
+}
+
+span.key > div:before {
+  content: url(/wastatic/common/img/key_mult.gif);
+  height: 19px;
+  width: 21px;
+  top: 4px;
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+}

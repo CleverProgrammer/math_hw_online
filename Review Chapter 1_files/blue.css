@@ -1,0 +1,331 @@
+#studentNav {
+	background:#c1d6e7;
+}
+
+/* waBox StudentSide
+-------------------------------------*/
+.waBox .bar {
+	border-bottom:solid 1px #9dc2df;
+	background:#9dc2df;
+}
+
+.waBox .bBorder {
+	border-bottom:1px solid #9dc2df;
+}
+
+.waBox .studentBoxBorder {
+	border-left:1px solid #9dc2df;
+	border-right:1px solid #9dc2df;
+}
+
+.waBox .subTask {
+	background:#eee;
+}
+
+/* Final Submit box
+-------------------------------------*/
+.finalSubmitBox {
+	background:#9dc2df;
+}
+
+.finalSubmitBox .finalSubmitBoxBorder {
+	background:#9dc2df;
+	border:1px solid #6c8393;
+	border-top:0;
+	border-bottom:0;
+}
+
+.finalSubmitBox .bBorder {
+	background:#9dc2df;
+	border-bottom:1px solid #6c8393;
+}
+
+.finalSubmitBox .tBorder {
+	border-bottom:1px solid #6c8393;
+}
+
+.finalSubmitBox .lTopCorner { background:url(/wastatic/themes/img/blue/Q_topLeft.gif) no-repeat 0 0; }
+
+.finalSubmitBox .rTopCorner { background:url(/wastatic/themes/img/blue/Q_topRight.gif) no-repeat top right; }
+
+.finalSubmitBox .bBox { background:url(/wastatic/themes/img/blue/B_bottomRight.gif) no-repeat top right; }
+
+.finalSubmitBox .borderWrap { background:url(/wastatic/themes/img/blue/Q_bottomLeft.gif) no-repeat top left; }
+
+
+/* New box styles (replaces studentBox)
+-------------------------------------*/
+.waBox .content {
+	border-left:1px solid #9dc2df;
+	border-right:1px solid #9dc2df;
+}
+.waBox .top .border {
+	background:#9dc2df;
+}
+.waBox .bottom .border {
+	border-bottom:1px solid #9dc2df;
+}
+.waBox .title {
+	background:#9dc2df;
+}
+.waBox .top > .left { background:url(/wastatic/themes/img/blue/blueBox_sprite.png) no-repeat 0 0; }
+.waBox .top > .right { background:url(/wastatic/themes/img/blue/blueBox_sprite.png) no-repeat -4px 0; }
+.waBox .bottom > .left { background:url(/wastatic/themes/img/blue/blueBox_sprite.png) no-repeat 0 -4px; }
+.waBox .bottom > .right { background:url(/wastatic/themes/img/blue/blueBox_sprite.png) no-repeat -4px -4px; }
+
+/* New question box styles (replaces studentQuestionBox)
+-------------------------------------*/
+.waQBox .top .border,
+.waQBox .bottom .border {
+	background:#9dc2df;
+}
+
+.waQBox .top .border {
+	border-top:1px solid #6C8393;
+}
+
+.waQBox .bottom .border {
+	border-bottom:1px solid #6C8393;
+}
+
+.waQBox .title {
+	font:normal 12px/22px arial, helvetica, sans-serif;
+	background:#9dc2df;
+	border-left:1px solid #6c8393;
+	border-right:1px solid #6c8393;
+}
+
+.waQBox .top > .left { background:url(/wastatic/themes/img/blue/qbox_blue_sprite.png) no-repeat 0 0; }
+.waQBox .top > .right { background:url(/wastatic/themes/img/blue/qbox_blue_sprite.png) no-repeat -4px 0; }
+.waQBox .bottom > .left { background:url(/wastatic/themes/img/blue/qbox_blue_sprite.png) no-repeat 0 -4px; }
+.waQBox .bottom > .right { background:url(/wastatic/themes/img/blue/qbox_blue_sprite.png) no-repeat -4px -4px; }
+
+
+/* Labs (Accordion) styling per theme
+-------------------------------------*/
+.qContent ul.accordion > li {
+	background:#dae6ef;
+}
+
+.qContent ul.accordion li span.open {
+	background:url(/wastatic/questions/img/expand_sprite_blue.png) no-repeat 0 -10px;
+}
+
+
+.qContent ul.accordion li span.close {
+	background:url(/wastatic/questions/img/expand_sprite_blue.png) no-repeat 0 0;
+}
+
+/* Top Nav Faculty Side Style
+-------------------------------------*/
+#webAssign #top .logoWrap {
+	/* background:url(/wastatic/themes/img/blue/logoBgblue.gif) repeat-y 0 1px; */
+}
+
+
+/* Faculty Side Element Styles
+-------------------------------------*/
+#mainContent .bottomBar {
+	border-bottom:2px solid #369;
+	background:#dae6ef;
+}
+
+#mainContent .bottomBar a,
+#mainContent .bottomBar a:hover,
+#mainContent .bottomBar a:visited {
+	color:#900;	
+}
+
+#popupWrap #top {
+	background:#9dc2df;
+}
+
+#webAssign #studentNav {
+	background:#c1d6e7;
+}
+
+.highlightedRow {
+	background:#c1d6e7;
+}
+
+
+/* communication skin styles
+-------------------------------------*/
+#comWrap {
+	border-top:3px solid #9dc2df;
+}
+
+#comWrap #comView {
+    background:#c1d6e7;
+}
+
+.tree li span, .tree li span.collapsed {
+	background:url(/wastatic/common/img/expandblue.png) no-repeat 2px 0;
+} 
+
+.tree li span.expanded {
+	background:url(/wastatic/common/img/collapseblue.png) no-repeat 2px 0;
+}
+
+#comWrap #comView .comPort {
+	border:1px solid #c1d6e7;
+}
+
+.tree li ul li.selected {
+	background:#c1d6e7;
+}
+
+/* tutorial button style 
+-----------------------------------*/
+.tutorialButton {
+    padding:0.3em 0.3em 0.3em 0.3em;
+    border:1px solid darkblue;
+    background:#dae6ef;
+}
+
+.tutorialButton a {
+     margin: 0 6px 0 4px;
+     padding: 0 0 0 19px;
+     font:bold 1em/2em arial, helvetica, sans-serif;
+     color: #0000CC;
+     background: url(/wastatic/common/img/tutorial.png) no-repeat 0 0;
+}
+
+.tutorialButton a:hover {
+    font:bold 1em/2em arial, helvetica, sans-serif;
+}
+
+/* DESCRIPTION: theme styles for Assignment Editor
+--------------------------------------*/
+
+/* subForms
+--------------------------------------*/
+.subForm .active {
+	background:#d9e6ef;
+}
+
+/* waExpand styles
+--------------------------------------*/
+.waExpand li.first {
+	border-bottom:1px solid #d9e6ef;
+}
+
+.waExpand .titleBar .open {
+	background:url(/wastatic/questions/img/expand_sprite_blue.png) no-repeat 0 -10px;
+}
+
+.waExpand .titleBar .close {
+	background:url(/wastatic/questions/img/expand_sprite_blue.png) no-repeat 0 0;
+}
+
+/* form grid styles
+--------------------------------------*/
+.form .settingsGrid {
+	border-bottom:1px solid #9dc2df;
+}
+
+.form .settingsGrid th {
+	border-top:1px solid #9dc2df;
+	border-right:1px solid #9dc2df;
+	background:#d9e6ef;
+}
+
+.form .settingsGrid td {
+	border-top:1px solid #9dc2df;
+	border-right:1px solid #9dc2df;
+}
+
+.form .settingsGrid th.first,
+.form .settingsGrid td.first {
+	border-left:1px solid #9dc2df;
+}
+
+.form .settingsGrid .input {
+	background:#d9e6ef;
+}
+
+.form .settingsGrid .tableDivide {
+	background:#369;
+}
+
+#assignmentSettings .form .na {
+	color:#9dc2df;
+}
+
+/* question list 
+--------------------------------------*/
+.questionList .masterHeader .settings {
+	background:#4684c1;
+}
+
+.questionList .masterHeader .settingDesc {
+	background:#9dc2df;
+}
+
+.questionList table .qs,
+.questionList table .qps,
+.questionList table .qip {
+	background:#9dc2df;
+}
+
+.questionList .questionLinks {
+    background:#9dc2df;
+}
+
+.questionList .qBox .qExpand .open {
+	background:url(/wastatic/questions/img/expand_sprite_blue.png) no-repeat 0 -10px;
+}
+
+.questionList .qBox .qExpand .closed {
+	background:url(/wastatic/questions/img/expand_sprite_blue.png) no-repeat 0 0;
+}
+
+.questionList .qBox .content {
+	background:#c1d6e7;
+}
+
+/* Show My Work theme styles 
+--------------------------------------*/
+
+.smw {
+    background:#d9e6ef;
+}
+
+.smw textarea {
+    border:1px solid #9dc2df;
+}
+
+.claro .dijitEditor {
+    margin-bottom:1em;
+    border:1px solid #9dc2df;
+}
+
+.claro .dijitToolbar {
+    background-color:#9dc2df;
+    border-bottom:1px solid #9dc2df;  
+}
+
+/* WA/View/templates/assignment/grader_grade_work.tpl */
+
+.paginationBar {
+    background:#C1D6E7;
+}
+
+.studentDivider {
+    height:5px;
+    background:#369;
+}
+
+/* Global Color Classes
+  Sets a few common colors based on theme
+--------------------------------------*/
+
+.theme-dark {
+    border-color: #9dc2df;
+    background-color: #9dc2df;
+}
+
+.theme-light {
+    border-color: #c1d6e7;
+    background-color: #c1d6e7;
+}
